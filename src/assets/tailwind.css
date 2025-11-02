@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* 👇 Add your theme customizations here */
+@theme {
+  --font-sans: "Poppins", sans-serif;
+
+  --grid-cols-70\/30: 70% 28%;
+}
