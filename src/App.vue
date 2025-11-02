@@ -1,3 +1,14 @@
+<script setup>
+import Navbar from '@/components/Navbar.vue';
+import Hero from '@/components/Hero.vue'
+import HomeCard from './components/HomeCard.vue';
+import JobListings from './components/JobListings.vue';
+
+</script>
+
 <template>
-  <h1 class="text-2xl">Job Portal</h1>
+  <Navbar />
+  <Hero />
+  <HomeCard />
+  <JobListings :limit="3" :showButton="true"/>
 </template>
