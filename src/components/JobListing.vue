@@ -1,6 +1,7 @@
 <script setup>
 
 import { defineProps, ref, computed } from 'vue';
+import { RouterLink } from 'vue-router';
 
 const props = defineProps({
   job: Object
@@ -47,11 +48,11 @@ const toggleDescription = () => {
             <i class="pi pi-map-marker text-lg"></i>
             {{ job.location }}
           </div>
-          <a :href="'job/' + job.id"
+          <RouterLink :to="'job/' + job.id"
             class="h-9 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
           >
             Read More
-          </a>
+          </RouterLink>
         </div>
       </div>
     </div>
